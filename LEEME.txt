@@ -1,0 +1,27 @@
+QuriOS 1.9.0 - Cómo subirlo
+============================
+
+Sube todo manteniendo esta estructura:
+
+  (RAÍZ de tu sitio)
+  ├── index.html              <- directo a la raíz
+  ├── sw.js                   <- directo a la raíz (OBLIGATORIO en la raíz)
+  ├── manifest.webmanifest    <- directo a la raíz
+  └── icons/                  <- CARPETA (se sube como carpeta)
+      ├── icon-192.png
+      ├── icon-512.png
+      ├── icon-maskable-512.png
+      └── apple-touch-icon.png
+
+Reglas importantes
+- index.html, sw.js y manifest.webmanifest van en la MISMA carpeta (la raíz).
+  sw.js debe estar en la raíz: si lo metes en una carpeta, solo controla esa carpeta.
+- Los 4 iconos van dentro de la carpeta "icons". No los dejes sueltos en la raíz.
+- No cambies los nombres de los archivos.
+- Necesita HTTPS (GitHub Pages ya lo trae) para instalar, usar la cámara,
+  funcionar sin conexión y recibir las actualizaciones automáticas.
+
+Actualizar
+- Cuando te pase una versión nueva, sube y reemplaza los archivos.
+  QuriOS se actualiza solo en los teléfonos que ya lo tienen instalado.
+- Tus datos (apps, ajustes, fondo) no se borran al actualizar.
